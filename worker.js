@@ -1,4 +1,4 @@
-import { createServer } from "./.medusa/server/index.js";
+import { createServer } from "/.medusa/server/index.js";
 
 export default {
   async fetch(request, env, ctx) {
