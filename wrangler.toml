@@ -1,4 +1,5 @@
-name = "amirbackend4"
+name = "medusa-backend"
+main = "worker.js"
 compatibility_date = "2025-12-03"
 compatibility_flags = ["nodejs_compat"]
 
@@ -6,13 +7,3 @@ compatibility_flags = ["nodejs_compat"]
 binding = "DB"
 database_name = "medusa-db"
 database_id = "ab56a9dd-6a10-4093-ac2a-84fd4f671012"
-
-[env.production]
-d1_databases = [
-  { binding = "DB", database_name = "medusa-db", database_id = "ab56a9dd-6a10-4093-ac2a-84fd4f671012" }
-]
-
-[build]
-command = "yarn build"
-
-main = ".medusa/server/index.js"
